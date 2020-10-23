@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# prints 'Holberton School' x 10
+
+c=1
+while [ $c -le 20 ]
+do
+    echo $c
+    case $c in
+        4)
+            echo "bad luck from China"
+            ;;
+        9)
+            echo "bad luck from Japan"
+            ;;
+        17)
+            echo "bad luck from Italy"
+            ;;
+    esac
+    let c=c+1
+done

@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# prints 'Holberton School' x 10
+
+c=1
+while [ $c -le 10 ]
+do
+    if [ $c -eq 10 ]
+    then
+        echo "Hi"
+    fi
+    echo "Holberton School"
+    let c=c+1
+done

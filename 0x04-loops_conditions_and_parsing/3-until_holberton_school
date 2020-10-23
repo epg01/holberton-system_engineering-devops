@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# prints 'Holberton School' x 10
+
+c=1
+until [ $c -gt 10 ]
+do
+    echo "Holberton School"
+    let c=c+1
+done

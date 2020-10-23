@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# prints hour
+
+h=0
+while [ $h -le 12 ]
+do
+    echo "Hour:" $h
+    m=1
+    while [ $m -le 59 ]
+    do
+        echo $m
+        let m=m+1
+    done
+    let h=h+1
+done

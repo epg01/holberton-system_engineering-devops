@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# prints 'Holberton School' x 10
+
+for _ in {0..9}
+do
+	echo "Holberton School"
+done
