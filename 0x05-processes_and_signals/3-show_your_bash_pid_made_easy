@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# prints PIDs that have a bash in their names
+
+pgrep -l bash
