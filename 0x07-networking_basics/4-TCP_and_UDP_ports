@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# displays network connections, shows connections for the protocol specified by protocol
+netstat -lp

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# shows the ips v4 of our machine
+
+ifconfig | grep "inet "   | awk '{print $2}'

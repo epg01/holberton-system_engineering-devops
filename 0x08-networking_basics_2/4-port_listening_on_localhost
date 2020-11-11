@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# set netcat create a server listening in 98 port
+nc -k -l 98
