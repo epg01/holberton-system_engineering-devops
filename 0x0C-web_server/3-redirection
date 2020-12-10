@@ -10,7 +10,7 @@ echo "server {
     root   /etc/nginx/html;
     index  index.html;
     location /redirect_me {
-        return 301 https://twitter.com/OlivaresP____;
+        return 301 https://twitter.com/Emmanue17280546;
     }
 }" > /etc/nginx/sites-available/default
 service nginx restart
