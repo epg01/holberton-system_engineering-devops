@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# list subdomains of a dns if it has
+
+func () {
+  answer_section=$(dig $2.$1 | grep -A1 'ANSWER SECTION:')
+  dns_record=$(echo $answer_section | awk '{print $7}')
+  ip_adress=$(echo $answer_section | awk '{print $8}')
+  printf "The subdomain %s is a %s record and points to %s\n" "$2" "$dns_record" "$ip_adress"
+}
+
+if [ $# == 1 ]
+then
+  for sub in www lb-01 web-01 web-02
+  do
+    func "$1" "$sub"
+  done
+elif [ $# == 2 ]
+then
+  func "$1" "$2"
+else
+  exit
+fi
