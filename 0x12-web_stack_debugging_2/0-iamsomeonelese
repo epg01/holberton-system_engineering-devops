@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# runs whoami as user passed as agument
+
+user_name="$1"
+sudo -S -u "$user_name" whoami
