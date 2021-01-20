@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# change port script restart and off nginx
+
+sudo sed -i '/8080 default_server/80 default_server/' /etc/nginx/sites-enabled/default
+pkill -1 -f '/usr/sbin/nginx'
