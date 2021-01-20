@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# change port script restart and off nginx
-
-sudo sed -i '/8080 default_server/80 default_server/' /etc/nginx/sites-enabled/default
-pkill -1 -f '/usr/sbin/nginx'
+# fault in Nginx installation from listening on port 80 short and beauty
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+pkill 'nginx'
